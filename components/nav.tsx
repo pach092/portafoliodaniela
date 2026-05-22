@@ -44,7 +44,7 @@ export default function Nav() {
       className={cn(
         'fixed top-0 left-0 right-0 z-50 transition-all duration-500',
         scrolled
-          ? 'bg-[oklch(0.085_0.025_280)]/85 backdrop-blur-xl border-b border-white/8 py-4'
+          ? 'bg-[oklch(0.085_0.03_305)]/85 backdrop-blur-xl border-b border-white/8 py-4'
           : 'bg-transparent py-6'
       )}
     >
@@ -72,7 +72,7 @@ export default function Nav() {
                 {label}
                 <span
                   className={cn(
-                    'absolute -bottom-0.5 left-0 h-px bg-gradient-to-r from-rose-400 to-violet-500 transition-all duration-300',
+                    'absolute -bottom-0.5 left-0 h-px bg-gradient-to-r from-violet-300 to-purple-950 transition-all duration-300',
                     active === href.slice(1) ? 'w-full' : 'w-0 group-hover:w-full'
                   )}
                 />
@@ -98,7 +98,7 @@ export default function Nav() {
           open ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
         )}
       >
-        <ul className="bg-[oklch(0.085_0.025_280)]/95 backdrop-blur-xl border-t border-white/8 px-6 py-5 flex flex-col gap-5">
+        <ul className="bg-[oklch(0.085_0.03_305)]/95 backdrop-blur-xl border-t border-white/8 px-6 py-5 flex flex-col gap-5">
           {links.map(({ label, href }) => (
             <li key={href}>
               <a
@@ -106,7 +106,7 @@ export default function Nav() {
                 onClick={(e) => go(e, href)}
                 className={cn(
                   'text-base font-medium transition-colors',
-                  active === href.slice(1) ? 'text-rose-400' : 'text-white/55 hover:text-white'
+                  active === href.slice(1) ? 'text-violet-300' : 'text-white/55 hover:text-white'
                 )}
               >
                 {label}

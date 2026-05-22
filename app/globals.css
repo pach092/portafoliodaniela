@@ -49,19 +49,19 @@
 }
 
 :root {
-  --background: oklch(0.085 0.025 280);
+  --background: oklch(0.085 0.03 305);
   --foreground: oklch(0.97 0 0);
-  --card: oklch(0.12 0.02 280);
+  --card: oklch(0.115 0.028 305);
   --card-foreground: oklch(0.97 0 0);
-  --popover: oklch(0.12 0.02 280);
+  --popover: oklch(0.115 0.028 305);
   --popover-foreground: oklch(0.97 0 0);
   --primary: oklch(0.97 0 0);
-  --primary-foreground: oklch(0.12 0.02 280);
-  --secondary: oklch(0.18 0.02 280);
+  --primary-foreground: oklch(0.115 0.028 305);
+  --secondary: oklch(0.18 0.025 305);
   --secondary-foreground: oklch(0.97 0 0);
-  --muted: oklch(0.18 0.02 280);
+  --muted: oklch(0.18 0.025 305);
   --muted-foreground: oklch(0.6 0 0);
-  --accent: oklch(0.18 0.02 280);
+  --accent: oklch(0.18 0.025 305);
   --accent-foreground: oklch(0.97 0 0);
   --destructive: oklch(0.577 0.245 27.325);
   --border: oklch(1 0 0 / 8%);
@@ -73,11 +73,11 @@
   --chart-4: oklch(0.371 0 0);
   --chart-5: oklch(0.269 0 0);
   --radius: 0.625rem;
-  --sidebar: oklch(0.1 0.02 280);
+  --sidebar: oklch(0.1 0.028 305);
   --sidebar-foreground: oklch(0.97 0 0);
-  --sidebar-primary: oklch(0.6 0.22 350);
+  --sidebar-primary: oklch(0.73 0.10 305);
   --sidebar-primary-foreground: oklch(0.97 0 0);
-  --sidebar-accent: oklch(0.18 0.02 280);
+  --sidebar-accent: oklch(0.18 0.025 305);
   --sidebar-accent-foreground: oklch(0.97 0 0);
   --sidebar-border: oklch(1 0 0 / 8%);
   --sidebar-ring: oklch(0.556 0 0);
@@ -179,7 +179,7 @@
 /* ─── Gradient text utility ─── */
 
 .gradient-text {
-  background: linear-gradient(135deg, #fb7185 0%, #c084fc 50%, #818cf8 100%);
+  background: linear-gradient(135deg, #c9a8e0 0%, #7c3aed 50%, #3E0063 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -216,7 +216,7 @@
   left: 0;
   top: 8px;
   width: 1px;
-  background: linear-gradient(to bottom, #fb7185, #c084fc, transparent);
+  background: linear-gradient(to bottom, #c9a8e0, #3E0063, transparent);
   animation: draw-line 1.5s ease both;
 }
 .timeline-line.revealed::before {
